@@ -14,7 +14,8 @@ body {
   height: 100vh;
   grid-template:
     "col-1 col-2"
-    "footer  footer";
+    "footer footer";
+  grid-template-columns: 1.5fr 1.5fr;
 }
 
 #col-1 {
@@ -28,16 +29,6 @@ body {
   background-color: black;
   color: white;
 }
-@media (min-width: 768px) {
-  #col-1 {
-    float: left;
-    /*position: fixed;*/
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 50%;
-  }
-}
 
 #col-2 {
   grid-area: col-2;
@@ -48,20 +39,55 @@ body {
   width: 100%;
   min-height: 490px;
 }
-@media (min-width: 768px) {
-  #col-2 {
-    float: right;
-    /*position: fixed;*/
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 50%;
-  }
-}
 #logo {
   color: white;
 }
 
 .footer {
   grid-area: footer;
+}
+
+#search {
+  border-radius: 1em;
+  background-color: black;
+  border-color: gray;
+  border-width: 0.5px;
+  margin: 5px 65px 40px;
+  font-size: large;
+  padding: 10px;
+}
+
+.div-1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+#col-2 button {
+  border: 1px solid black;
+  border-radius: 1em;
+  height: 20px;
+  width: 320px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+p {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+a {
+  color: rgb(29, 155, 240);
+  text-decoration: none;
+}
+
+.signin {
+  color: rgb(113, 118, 123);
+}
+
+ul {
+  color: rgb(113, 118, 123);
+  list-style: none;
 }
