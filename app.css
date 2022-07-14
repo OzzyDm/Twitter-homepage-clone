@@ -55,11 +55,13 @@ body {
   margin: 5px 65px 40px;
   font-size: large;
   padding: 10px;
+  width: 450px;
 }
 
 .div-1 {
-  margin-bottom: 10px;
-  font-size: 2em;
+  margin-bottom: 40px;
+  font-size: 3em;
+  padding-right: 155px;
 }
 
 #col-2 button {
@@ -85,9 +87,27 @@ a {
 
 .signin {
   color: rgb(113, 118, 123);
+  size-adjust: 10px;
 }
 
 ul {
   color: rgb(113, 118, 123);
   list-style: none;
+}
+
+li {
+  margin-left: 10px;
+}
+
+footer ul li {
+  display: inline;
+  float: left;
+  font-size: small;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.copy {
+  color: rgb(113, 118, 123);
 }
