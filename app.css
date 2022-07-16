@@ -47,17 +47,6 @@ body {
   grid-area: footer;
 }
 
-#search {
-  border-radius: 3em;
-  background-color: black;
-  border-color: grey;
-  border-width: 0.1px;
-  margin: 5px 65px 40px;
-  font-size: small;
-  padding: 10px;
-  width: 450px;
-}
-
 .div-1 {
   margin-bottom: 40px;
   font-size: 3em;
@@ -94,6 +83,13 @@ a {
   color: rgb(29, 155, 240);
 }
 
+.tags {
+  margin-right: px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .signin {
   color: rgb(113, 118, 123);
   font-size: 14px;
@@ -108,6 +104,10 @@ li {
   margin-left: 10px;
 }
 
+li:first-child {
+  margin-left: 0;
+}
+
 footer ul li {
   display: inline;
   float: left;
@@ -120,11 +120,6 @@ footer ul li {
 div ul li {
   display: inline;
   float: left;
-  margin-bottom: 200px;
-}
-
-div ul {
-  margin-left: 55px;
 }
 
 .copy {
@@ -159,4 +154,74 @@ button:hover {
 
 a:link {
   color: red;
+}
+
+hr {
+  width: 360px;
+  border: none;
+  border-top: 1px double rgba(113, 118, 123, 0.3);
+  color: white;
+  overflow: visible;
+  text-align: center;
+  height: 15px;
+}
+
+hr:after {
+  background: rgb(32, 35, 39);
+  color: white;
+  content: " or ";
+  padding: 0 10px;
+  position: relative;
+  top: -13px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  margin: 5px 65px 40px;
+  border-radius: 3em;
+  background-color: black;
+  border: 1px solid grey;
+  padding: 10px;
+  width: 450px;
+  height: auto;
+}
+
+.input-icons:focus-within {
+  border: 1px solid rgb(40, 90, 164);
+}
+
+.icon {
+  margin: 1px;
+  min-width: 40px;
+}
+
+.input-field {
+  color: white;
+  width: 100%;
+  margin-left: 25px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.input-field:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+@media screen and (max-width: 1017px) {
+  .container {
+    grid-template:
+      "col-1"
+      "col-2"
+      "footer";
+  }
+  #col-1 {
+    height: 600px;
+  }
+  div ul li {
+    margin-bottom: 10px;
+  }
 }
