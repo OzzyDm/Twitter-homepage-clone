@@ -94,6 +94,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 450px;
+  margin-bottom: 100px;
 }
 
 .signin {
@@ -179,6 +180,11 @@ hr:after {
   top: -13px;
 }
 
+#search-icon {
+  color: rgb(113, 118, 123);
+  font-size: medium;
+}
+
 .input-icons i {
   position: absolute;
 }
@@ -217,7 +223,8 @@ hr:after {
 
 .title {
   margin-bottom: 40px;
-  font-size: 3em;
+  font-size: 4.5em;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 1017px) {
